@@ -21,8 +21,10 @@ To start developing:
 ```bash
 cd hr-app
 npm install
+echo "PORT=80" > .env
 npm run dev
 ```
 
-This will launch the development server on [http://localhost:5173](http://localhost:5173).
+The dev server reads the port from a `.env` file. By default it runs on port 80.
+This repository defines `/login` as a public route and `/dashboard` as a private route.
 
